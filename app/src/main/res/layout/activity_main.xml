@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+    <RelativeLayout
+        android:id="@+id/profile_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_button_bg">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_baseline_account_circle_24" />
+
+        <TextView
+            android:id="@+id/tex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/profile_photo"
+            android:text="@string/app_name"
+            android:textColor="#000" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/logout"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_baseline_exit_to_app_24" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_view_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/profile_rel"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_add_24"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/circle_blue"/>
+
+</RelativeLayout>

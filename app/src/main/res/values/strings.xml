@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Database</string>
+    <string name="enter_as_customer">Enter as Customer</string>
+    <string name="enter_as_master">Enter as Master</string>
+    <string name="fiz">Физ. лицо</string>
+    <string name="ur">Юр. лицо</string>
+    <string name="master">Мастер</string>
+    <string name="confirm">Подтвердить</string>
+</resources>
