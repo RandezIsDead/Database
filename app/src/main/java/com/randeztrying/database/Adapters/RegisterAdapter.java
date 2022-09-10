@@ -1,6 +1,5 @@
 package com.randeztrying.database.Adapters;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -29,14 +28,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class LoginAdapter extends RecyclerView.Adapter<LoginAdapter.ViewHolder> {
+public class RegisterAdapter extends RecyclerView.Adapter<RegisterAdapter.ViewHolder> {
 
     private final Context context;
     private final int enterId;
     private final List<String> fields;
     private final List<ViewHolder> viewHolders;
 
-    public LoginAdapter(Context context, int enterId) {
+    public RegisterAdapter(Context context, int enterId) {
         this.context = context;
         this.enterId = enterId;
         this.fields = new ArrayList<>();

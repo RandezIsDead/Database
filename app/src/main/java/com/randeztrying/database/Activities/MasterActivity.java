@@ -8,8 +8,8 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.randeztrying.database.Activities.StartActivities.SplashActivity;
 import com.randeztrying.database.Helpers.Prefs;
-import com.randeztrying.database.Models.Customer;
 import com.randeztrying.database.Models.Master;
 import com.randeztrying.database.R;
 
@@ -32,7 +32,8 @@ public class MasterActivity extends AppCompatActivity {
 
         logout.setOnClickListener(view -> {
             Prefs.deleteMaster(getApplicationContext());
-            startActivity(new Intent(MasterActivity.this, LoginActivity.class));
+            startActivity(new Intent(MasterActivity.this, SplashActivity.class));
+            overridePendingTransition(R.anim.left_in, R.anim.right_out);
             finish();
         });
     }

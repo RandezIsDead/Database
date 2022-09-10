@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.randeztrying.database.Activities.StartActivities.SplashActivity;
 import com.randeztrying.database.Helpers.Prefs;
 import com.randeztrying.database.Models.Customer;
 import com.randeztrying.database.R;
@@ -18,7 +19,7 @@ public class CustomerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_customer);
 
         ImageView logout = findViewById(R.id.logout);
         TextView text = findViewById(R.id.tex);
@@ -27,7 +28,8 @@ public class CustomerActivity extends AppCompatActivity {
 
         logout.setOnClickListener(view -> {
             Prefs.deleteCustomer(getApplicationContext());
-            startActivity(new Intent(CustomerActivity.this, LoginActivity.class));
+            startActivity(new Intent(CustomerActivity.this, SplashActivity.class));
+            overridePendingTransition(R.anim.left_in, R.anim.right_out);
             finish();
         });
     }
