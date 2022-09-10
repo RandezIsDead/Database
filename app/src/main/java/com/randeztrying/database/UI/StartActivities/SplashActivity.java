@@ -1,14 +1,14 @@
-package com.randeztrying.database.Activities.StartActivities;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.randeztrying.database.UI.StartActivities;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import com.randeztrying.database.Activities.CustomerActivity;
-import com.randeztrying.database.Activities.MasterActivity;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.randeztrying.database.UI.CustomerActivity;
+import com.randeztrying.database.UI.MasterActivity;
 import com.randeztrying.database.Helpers.Prefs;
 import com.randeztrying.database.Models.Customer;
 import com.randeztrying.database.Models.Master;

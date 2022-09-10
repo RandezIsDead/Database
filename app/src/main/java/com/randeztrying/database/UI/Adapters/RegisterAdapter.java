@@ -1,4 +1,4 @@
-package com.randeztrying.database.Adapters;
+package com.randeztrying.database.UI.Adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -14,8 +14,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.StringRequest;
-import com.randeztrying.database.Activities.CustomerActivity;
-import com.randeztrying.database.Activities.MasterActivity;
+import com.randeztrying.database.UI.CustomerActivity;
+import com.randeztrying.database.UI.MasterActivity;
 import com.randeztrying.database.Database.Constants;
 import com.randeztrying.database.Database.RequestHandler;
 import com.randeztrying.database.Helpers.Prefs;
@@ -146,6 +146,7 @@ public class RegisterAdapter extends RecyclerView.Adapter<RegisterAdapter.ViewHo
 
                     StringRequest stringRequest = new StringRequest(Request.Method.POST, Constants.ADD_MASTER,
                             response -> {
+                                System.out.println(response);
                                 Intent intent = new Intent(context, MasterActivity.class);
                                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                                 context.startActivity(intent);

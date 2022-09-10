@@ -1,4 +1,4 @@
-package com.randeztrying.database.Activities.StartActivities;
+package com.randeztrying.database.UI.StartActivities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,7 +9,7 @@ import android.widget.EditText;
 
 import com.android.volley.Request;
 import com.android.volley.toolbox.StringRequest;
-import com.randeztrying.database.Activities.CustomerActivity;
+import com.randeztrying.database.UI.CustomerActivity;
 import com.randeztrying.database.Database.Constants;
 import com.randeztrying.database.Database.RequestHandler;
 import com.randeztrying.database.Helpers.Prefs;

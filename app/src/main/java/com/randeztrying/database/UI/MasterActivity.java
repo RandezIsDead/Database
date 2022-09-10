@@ -1,4 +1,4 @@
-package com.randeztrying.database.Activities;
+package com.randeztrying.database.UI;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.randeztrying.database.Activities.StartActivities.SplashActivity;
+import com.randeztrying.database.UI.StartActivities.SplashActivity;
 import com.randeztrying.database.Helpers.Prefs;
 import com.randeztrying.database.Models.Master;
 import com.randeztrying.database.R;

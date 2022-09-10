@@ -1,4 +1,4 @@
-package com.randeztrying.database.Activities.StartActivities;
+package com.randeztrying.database.UI.StartActivities;
 
 import android.os.Bundle;
 import android.view.View;
@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.randeztrying.database.Adapters.RegisterAdapter;
+import com.randeztrying.database.UI.Adapters.RegisterAdapter;
 import com.randeztrying.database.R;
 
 public class RegisterActivity extends AppCompatActivity {

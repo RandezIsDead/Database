@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_toEndOf="@+id/profile_photo"
-            android:text="@string/app_name"
+            android:layout_toStartOf="@id/logout"
             android:textColor="#000" />
 
         <de.hdodenhof.circleimageview.CircleImageView
@@ -46,13 +46,14 @@
         android:layout_below="@id/profile_rel"/>
 
     <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/addDevice"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:src="@drawable/ic_baseline_add_24"
-        android:padding="10dp"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp"
-        android:background="@drawable/circle_blue"/>
+        android:background="@drawable/circle_blue"
+        android:padding="10dp"
+        android:src="@drawable/ic_baseline_add_24" />
 
 </RelativeLayout>
